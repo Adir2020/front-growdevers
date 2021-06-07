@@ -19,7 +19,7 @@ axios.get('/growdevers')
          const turma = document.getElementById('turma').value;
          const cidade = document.getElementById('cidade').value;
 
-         const usuario = await axios.post('/growdevers', {
+         const response = await axios.post('/growdevers', {
              nome,
              idade,
              turma,
@@ -27,4 +27,6 @@ axios.get('/growdevers')
          });
 
          console.log(usuario);
+
+         lista.innerHTML += `${data.nome} <br/>`;
      }
