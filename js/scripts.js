@@ -26,7 +26,8 @@ axios.get('/growdevers')
              cidade
          });
 
-         console.log(usuario);
+         location.reload();
 
+         
          lista.innerHTML += `${data.nome} <br/>`;
      }
